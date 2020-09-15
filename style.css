@@ -65,7 +65,7 @@ h1{
 
 .after:hover{
   background: url(assets/1_redesign.png);
-  max-width: calc(100vw/4);
+  /* width: calc(100vw/4); */
 }
 
 .article_url{
@@ -81,7 +81,28 @@ img{
   margin-top: 20px;
 }
 
-.big_pic{
+.why_qst{
+  cursor: pointer;
+  text-decoration: underline;
+ }
+
+ /* чтобы чекбокс не было видно */
+ .why input{
+   display: none;
+ }
+
+ /* чтобы ответ не было видно при пассивном чекбоксе */
+ .why_answer{
+   display: none;
+ }
+
+ /* когда чекбокс нажат, класс с ответом становится виден */
+ .why input:checked ~ .why_answer{
+   display: block;
+ }  
+
+
+ .big_pic{
   width: 50%;
   margin: 20px;
 }
