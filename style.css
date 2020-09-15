@@ -44,6 +44,7 @@ h1{
   margin-top: 60px;
   display: flex;
   align-items: center;
+  position: relative;
  }
 
 .pic_before{
@@ -53,20 +54,35 @@ h1{
 .arrow{
   width: calc(100vw/8);
   font-size: 30px;
+  margin: 20px;
 }
 
+/* Пришлось делать абсолютное позиционирование ему и ссылке на статью, т.к. нужно было, чтобы див заливался серым по высоте родителя, а высота родителя не определена, и только вот таким способом получилось без js */
 .after{
   width: calc(100vw/4);
   background-color: #c4c4c4;
-}
+  position: absolute;
+  margin-left: calc(100%/7*3);
+  top: 0;
+  bottom: 0;
+  }
 
 .after:hover{
   background: url(assets/1_redesign.png);
   max-width: calc(100vw/4);
 }
 
+.article_url{
+  position: absolute;
+  margin-left: calc(100%/7*5 + 20px);
+}
+
 img{
   max-width: 100%;
+}
+
+.why{
+  margin-top: 20px;
 }
 
 .big_pic{
