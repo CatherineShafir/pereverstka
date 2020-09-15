@@ -1,5 +1,10 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
 
-  @font-face {
+@font-face {
     font-family: 'Formular';
     src: url('Formular.eot');
     src: local('Formular'),
@@ -9,4 +14,67 @@
         url('Formular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+body{
+  font-family: 'Formular';
+}
+
+.black_zone{
+  width: calc(100vw/8);
+  background-color: #111111;
+  padding-left: 20px;
+  padding-top: 50px;
+  height: 100vh;
+  position: fixed;
+}
+
+h1{
+  font-size: 40px;
+}
+
+.white_zone{
+  margin-left: calc(100vw/8);
+  padding-left: 20px;
+  padding-top: 40px;
+
+}
+
+.row{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+ }
+
+.pic_before{
+  width: calc(100vw/4);
+}
+
+.arrow{
+  width: calc(100vw/8);
+  font-size: 30px;
+}
+
+.after{
+  width: calc(100vw/4);
+  background-color: #c4c4c4;
+}
+
+.after:hover{
+  background: url(assets/1_redesign.png);
+  max-width: calc(100vw/4);
+}
+
+img{
+  max-width: 100%;
+}
+
+.big_pic{
+  width: 50%;
+  margin: 20px;
+}
+
+.pereverstka_number{
+  margin-left: 20px;
+  margin-top: 40px;
 }
