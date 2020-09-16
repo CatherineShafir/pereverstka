@@ -42,11 +42,13 @@ body{
   border-radius: 14px;
   border: white;
   text-decoration: none;
+  color: black;
 }
 
 .tag:hover{
   background-color: #111111;
   border: 1px solid white;
+  color: #37F218;
 }
 
 h1{
@@ -73,9 +75,10 @@ h1{
 
 .arrow{
   width: calc(100vw/8);
-  font-size: 30px;
-  margin: 20px;
-}
+  font-size: calc(150%);
+  position: absolute;
+  margin-left: calc(100%/7*2 + 20px);
+ }
 
 /* Пришлось делать абсолютное позиционирование ему и ссылке на статью, т.к. нужно было, чтобы див заливался серым по высоте родителя, а высота родителя не определена, и только вот таким способом получилось без js */
 .after{
@@ -97,12 +100,20 @@ h1{
   margin-left: calc(100%/7*5 + 20px);
 }
 
+.article_url_text:hover{
+  color: #37F218;
+}
+
+.article_url_text{
+  color: black;
+}
+
 img{
   max-width: 100%;
 }
 
 .why{
-  margin-top: 20px;
+  margin-top: 10px;
   margin-right: 20px;
 }
 
@@ -152,3 +163,5 @@ img{
 .caption{
   margin-bottom: 20px;
 }
+
+
