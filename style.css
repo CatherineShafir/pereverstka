@@ -92,7 +92,8 @@ h1{
 
 .after:hover{
   background: url(assets/1_redesign.png);
-  /* width: calc(100vw/4); */
+  background-size: cover;
+  background-position: center;
 }
 
 .article_url{
