@@ -51,6 +51,10 @@ body{
   color: #37F218;
 }
 
+.tag.no{
+  opacity: 0;
+}
+
 h1{
   font-size: 40px;
 }
@@ -165,4 +169,79 @@ img{
   margin-bottom: 20px;
 }
 
+.contain{
+  cursor: pointer;
+}
 
+/* В состоянии по умолчанию меню не показывается */
+.menu {
+  display: none;
+}
+
+/* В состоянии open меню показывается. open переключается джавой */
+.menu.open {
+  display: block;
+  margin-top: 110px;
+ }
+
+.navbar{
+  color: white;
+  text-decoration: none;
+  font-size: calc(100vw/80);
+}
+
+.nav li{
+  margin-bottom: 40px;
+}
+
+/* .navbar:hover{
+  color: #37F218;
+} */
+
+.burger {
+  width: 30px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.burger span,
+.burger:before,
+.burger:after {
+  display: block;
+  height: 3px;
+  background-color: white;
+  width: 100%;
+  margin: auto;
+  transition: .25s ease-in-out;
+}
+
+/* Вот тут не очень понятно, почему без контента полоски не видны, надо про контент почитать */
+.burger:before,
+.burger:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  transform-origin: 50% 50%;
+}
+
+.burger:before {
+  top: calc(100% - 3px);
+}
+
+.burger.active span {
+  opacity: 0;
+}
+
+.burger.active:after {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+.burger.active:before {
+  transform: rotate(45deg);
+  top: 9px;
+}
