@@ -20,26 +20,31 @@ body{
   width: calc(100vw/8);
   background-color: #111111;
   padding-left: 20px;
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  padding-top: calc(100vw/32);
   height: 100vh;
   position: fixed;
   display: flex;
 }
 
 .tags{
-  margin-top: 130px;
+  /* margin-top: 130px; */
+  margin-top: calc(100vw/10);
   margin-right: 20px;
   position: absolute;
 }
 
 .tag{
   background-color: white;
-  padding: 8px;
-  font-size: 14px;
+  /* padding: 8px; */
+  padding: calc(100vw/118);
+  /* font-size: 14px; */
+  font-size: calc(100vw/68);
   text-align: center;
   display: inline-block;
   margin-bottom: 10px;
-  border-radius: 14px;
+  /* border-radius: 14px; */
+  border-radius: calc(100vw/68);
   border: white;
   text-decoration: none;
   color: black;
@@ -56,18 +61,21 @@ body{
 }
 
 h1{
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: calc(100vw/32);
+  padding-top: calc(100vw/32);
 }
 
 .white_zone{
   margin-left: calc(100vw/8);
   padding-left: 20px;
-  padding-top: 40px;
+  /* padding-top: 40px; */
 
 }
 
 .row{
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  margin-top: calc(100vw/16);
   display: flex;
   align-items: center;
   position: relative;
@@ -79,7 +87,7 @@ h1{
 
 .arrow{
   width: calc(100vw/8);
-  font-size: calc(150%);
+  font-size: calc(100vw/45);
   position: absolute;
   margin-left: calc(100%/7*2 + 20px);
  }
@@ -187,11 +195,11 @@ img{
 .navbar{
   color: white;
   text-decoration: none;
-  font-size: calc(100vw/80);
+  font-size: calc(100vw/60);
 }
 
 .nav li{
-  margin-bottom: 40px;
+  margin-bottom: calc(100vw/60);
 }
 
 /* .navbar:hover{
@@ -199,8 +207,10 @@ img{
 } */
 
 .burger {
-  width: 30px;
-  height: 24px;
+  /* width: 30px; */
+  width: calc(100vw/30);
+  /* height: 24px; */
+  height: calc(100vw/40);
   display: flex;
   position: relative;
   background: none;
