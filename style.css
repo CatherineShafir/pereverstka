@@ -29,7 +29,7 @@ body{
 
 .tags{
   /* margin-top: 130px; */
-  margin-top: calc(100vw/10);
+  margin-top: calc(100vw/8);
   margin-right: 20px;
   position: absolute;
 }
@@ -189,7 +189,8 @@ img{
 /* В состоянии open меню показывается. open переключается джавой */
 .menu.open {
   display: block;
-  margin-top: 110px;
+  /* margin-top: 110px; */
+  margin-top: calc(100vw/10);
  }
 
 .navbar{
