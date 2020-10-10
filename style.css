@@ -12,6 +12,10 @@
     font-style: normal;
 }
 
+html{
+  font-size: calc(10/1440*100vw);
+}
+
 body{
   font-family: 'Formular';
 }
@@ -39,7 +43,7 @@ body{
   /* padding: 8px; */
   padding: calc(100vw/118);
   /* font-size: 14px; */
-  font-size: calc(100vw/68);
+  font-size: 2rem;
   text-align: center;
   display: inline-block;
   margin-bottom: 10px;
@@ -62,7 +66,7 @@ body{
 
 h1{
   /* font-size: 40px; */
-  font-size: calc(100vw/32);
+  font-size: 4.2rem;
   padding-top: calc(100vw/32);
 }
 
@@ -196,7 +200,7 @@ img{
 .navbar{
   color: white;
   text-decoration: none;
-  font-size: calc(100vw/60);
+  font-size: 2rem;
 }
 
 .nav li{
@@ -230,7 +234,6 @@ img{
   transition: .25s ease-in-out;
 }
 
-/* Вот тут не очень понятно, почему без контента полоски не видны, надо про контент почитать */
 .burger:before,
 .burger:after {
   position: absolute;
