@@ -210,6 +210,7 @@ img{
 
 .caption{
   margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 .contain{
@@ -296,4 +297,10 @@ img{
 .burger.active:before {
   transform: rotate(45deg);
   top: 9px;
+}
+
+.info{
+  font-size: 2rem;
+  width: calc(100vw/2);
+  margin-top: calc(100vw/10);
 }
