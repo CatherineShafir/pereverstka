@@ -52,7 +52,7 @@ body{
   position: absolute;
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
   .tags_white{
     display: none;
   }
@@ -97,9 +97,17 @@ h1{
 
 }
 
-.row{
+.row_first{
   /* margin-top: 60px; */
-  margin-top: calc(100vw/10);
+  margin-top: calc(100vw/14);
+  display: flex;
+  align-items: center;
+  position: relative;
+ }
+
+ .row{
+  /* margin-top: 60px; */
+  margin-top: calc(100vw/30);
   display: flex;
   align-items: center;
   position: relative;
@@ -168,14 +176,17 @@ img{
  /* чтобы ответ не было видно при пассивном чекбоксе */
  .why_answer{
    display: none;
-   font-size: 2rem;
-   line-height: 18px;
+   font-size: 1.5rem;
  }
 
  /* когда чекбокс нажат, класс с ответом становится виден */
  .why input:checked ~ .why_answer{
    display: block;
  }  
+
+ .article_url_text{
+   font-size: 2rem;
+ }
 
 .footer{
   height: 50px;
